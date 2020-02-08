@@ -10,11 +10,11 @@ void func(int sockfd)
 { 
 	char buff[MAX]; 
 	int n; 
-	for (;;) { 
+	for (;;) { // while loop :) 
 		bzero(buff, sizeof(buff)); 
 		printf("Enter the string : "); 
 		n = 0; 
-		while ((buff[n++] = getchar()) != '\n'); // imp loop 
+		while ((buff[n++] = getchar()) != '\n');// imp loop 
 			 
 		write(sockfd, buff, sizeof(buff)); 
 		bzero(buff, sizeof(buff)); 

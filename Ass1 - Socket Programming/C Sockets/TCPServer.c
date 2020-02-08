@@ -14,7 +14,7 @@ void func(int sockfd)
 { 
 	char buff[MAX]; 
 	int n; 
-	// infinite loop for chat 
+	// infinite loop for chat :)
 	for (;;) { 
 		bzero(buff, MAX); 
 
